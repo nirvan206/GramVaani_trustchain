@@ -1,0 +1,48 @@
+{
+  "name": "trustchain-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TrustChain microfinance platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [
+    "blockchain",
+    "microfinance",
+    "api"
+  ],
+  "author": "TrustChain Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.4.1",
+    "mongoose": "^8.1.1",
+    "redis": "^4.6.12",
+    "ethers": "^6.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.11.0",
+    "axios": "^1.6.5",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.6.1",
+    "node-cron": "^3.0.3",
+    "razorpay": "^2.9.2",
+    "twilio": "^4.20.1",
+    "compression": "^1.7.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "eslint": "^8.57.0"
+  }
+}

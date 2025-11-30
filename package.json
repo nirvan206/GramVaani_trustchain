@@ -1,0 +1,36 @@
+{
+  "name": "trustchain",
+  "version": "1.0.0",
+  "description": "Blockchain-based microfinance platform for rural India",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "blockchain": "cd contracts && npx hardhat node",
+    "deploy-contracts": "cd contracts && npx hardhat run scripts/deploy.js --network localhost",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "npm run test:contracts && npm run test:backend && npm run test:frontend",
+    "test:contracts": "cd contracts && npx hardhat test",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "build": "cd frontend && npm run build",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "keywords": [
+    "blockchain",
+    "microfinance",
+    "defi",
+    "ethereum",
+    "smart-contracts",
+    "fintech"
+  ],
+  "author": "TrustChain Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
