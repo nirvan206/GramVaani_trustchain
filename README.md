@@ -2,7 +2,7 @@
 
 A decentralized microfinance platform for rural India with multi-layer blockchain architecture, smart contracts, offline support, and multi-language accessibility.
 
-## Features
+## Features(to be introduced)
 
 - 🔗 **Multi-layer Blockchain**: Public (Ethereum), Permissioned (Hyperledger), Sidechain (Polygon)
 - 📝 **Smart Contracts**: Automated loan approval, repayment tracking, dispute resolution
